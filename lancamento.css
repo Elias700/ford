@@ -10,12 +10,11 @@
     --cor-secundaria: #1351d8;
 }
 
-.container-header {
-    position: relative;
-    height: 80px;
+header {
+    padding: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
     background-color: #f2f2f2; 
 }
   
@@ -24,7 +23,6 @@
     justify-content: center;
     gap: 40px;
     list-style: none;
-    align-items: center;
 }
 
 li a{
@@ -39,9 +37,10 @@ a:hover{
     text-decoration: underline;
 }
 
-
 #logo{
     height: 50px;
+    position: absolute;
+    inset: 0;
 }
 
 section {
