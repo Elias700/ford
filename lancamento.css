@@ -44,18 +44,67 @@ a:hover{
     height: 50px;
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
+    gap: 30px; /* espaço entre os cards */
+    padding: 40px 20px;
+    flex-wrap: wrap; /* garante que em telas pequenas os cards quebrem linha */
 }
 
-.card-1{
-
+.ajuste{
+    display: flex;
 }
-
+  
+.card-1 {
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+  
+.card-1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+  
+.card-1 h3 {
+    font-size: 18px;
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+  
+.card-1 p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333;
+}
+  
+.card-1 input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+  
+.card-1 .info {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+  
 #btt{
     display: flex;
     justify-content: center;
+    padding: 50px 0;
 }
 
 button{
@@ -73,10 +122,19 @@ button:hover{
     transition: 0.5s;
 }
 
-.logo-footer{
+footer{
     display: flex;
-    justify-content: end;
-    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.ajuste-redes{
+    display: flex;
+    align-items: center;
+}
+
+strong{
+    color: #f2f2f2;
 }
 
 footer{

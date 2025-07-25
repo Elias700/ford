@@ -13,12 +13,11 @@ html{
     --cor-secundaria: #1351d8;
 }
 
-.container-header {
-    position: relative;
-    height: 80px;
+header {
+    padding: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
     background-color: #f2f2f2; 
 }
   
@@ -27,7 +26,6 @@ html{
     justify-content: center;
     gap: 40px;
     list-style: none;
-    align-items: center;
 }
 
 li a{
@@ -42,9 +40,10 @@ a:hover{
     text-decoration: underline;
 }
 
-
 #logo{
     height: 50px;
+    position: absolute;
+    inset: 0;
 }
 
 h2{
@@ -55,9 +54,9 @@ h2{
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 16px; /* espaçamento entre os campos */
-    max-width: 400px; /* limite de largura opcional */
-    margin: 0 auto; /* centraliza horizontalmente */
+    gap: 16px; 
+    max-width: 400px;
+    margin: 0 auto; 
     padding: 20px;
 }
 
@@ -68,11 +67,20 @@ form{
 input{
     border-radius: 5px;
     padding: 10px 18px;
+    border: 1px solid var(--cor-primaria);
+}
+
+input::placeholder{
+    color: rgb(204, 16, 16);
 }
 
 select{
     padding: 10px 18px;
+    color: rgb(204, 16, 16);
+    border-radius: 5px;
+    border: 1px solid var(--cor-primaria);
 }
+
 
 #btt{
    display: flex;
@@ -95,10 +103,20 @@ button:hover{
     transition: 0.5s;
 }
   
-.logo-footer{
+footer{
     display: flex;
-    justify-content: end;
-    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+}
+
+.ajuste-redes{
+    display: flex;
+    align-items: center;
+}
+
+strong{
+    color: #f2f2f2;
 }
 
 footer{

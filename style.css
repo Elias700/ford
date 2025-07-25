@@ -24,7 +24,7 @@
     justify-content: center;
     gap: 40px;
     list-style: none;
-    align-items: center;
+    
 }
 
 li a{
@@ -39,6 +39,11 @@ a:hover{
     text-decoration: underline;
 }
 
+header #logo{
+    display: flex;
+    justify-content: start;
+}
+
 #logo{
     height: 50px;
 }
@@ -50,20 +55,27 @@ a:hover{
 #descricao{
     text-align: center;
     font-size: 1.1rem;
+    padding: 15px;
 }
 
 button{
     background: va;
 }
 
-.redes-sociais{
-    width: 100%;
+footer{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
 }
 
-.logo-footer{
+.ajuste-redes{
     display: flex;
-    justify-content: end;
-    width: 100%;
+    align-items: center;
+}
+
+strong{
+    color: #f2f2f2;
 }
 
 footer{
