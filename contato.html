@@ -20,24 +20,45 @@
 
     <main>
         <form>
-            <h2>Sobre Você</h2>
-            <div>
-                <input type="text" placeholder="NOME*">
-                <input type="email" name="" id="" placeholder="E-MAIL*">
-                <input type="number" placeholder="CPF*">
-                <input type="text">
-                <input type="number" placeholder="TELEFONE*">
-                <select name="" id=""> 
-                    <option value="">COMO DESEJA COMPRAR?</option>
-                    <option value="">PIX</option>
-                    <option value="">CARTÃO</option>
-                    <option value="">DINHEIRO</option>
-                </select>
-            </div>
-            <button>Enviar</button>
+          <h2>Sobre Você</h2>
+      
+          <div class="formulario">
+            <input type="text" name="nome" placeholder="NOME*" required>
+      
+            <input type="email" name="email" placeholder="E-MAIL*" required>
+      
+            <input type="number" name="cpf" placeholder="CPF*" required>
+      
+            <input type="text" name="endereco" placeholder="ENDEREÇO">
+      
+            <input type="number" name="telefone" placeholder="TELEFONE*" required>
+      
+            <select name="comunicacao" required>
+              <option value="">COMO DESEJA SE COMUNICAR</option>
+              <option value="email">E-MAIL</option>
+              <option value="whatsapp">WHATSAPP</option>
+              <option value="telefone">TELEFONE</option>
+            </select>
+          </div>
+      
+          <div id="btt">
+            <button type="submit">Enviar</button>
+          </div>
         </form>
-    </main>
+      </main>
 
+      <footer>
+        <div class="redes-sociais">
+            <strong>Redes Sociais</strong>
+            <img src="./img/facebook-50.png" alt="facebook" class="facebook">
+            <img src="./img/instagram-logo-50.png" alt="instagram" class="instagram">
+            <img src="./img/youtube-squared-50.png" alt="youtube" class="youtube">
+            <div class="logo-footer">
+                <img src="./img/ford-96.png" alt="ford">
+            </div>
+        </div>
+    </footer>
+      
     
 </body>
 </html>
