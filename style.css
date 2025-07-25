@@ -44,7 +44,26 @@ a:hover{
 }
 
 #imagem-1{
-    height: 85vh;
+    width: 100%;
+}
+
+#descricao{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+button{
+    background: va;
+}
+
+.redes-sociais{
+    width: 100%;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: end;
+    width: 100%;
 }
 
 footer{
