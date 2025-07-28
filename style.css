@@ -1,81 +1,139 @@
-
-*{
+* {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-}
-
-:root {
+    box-sizing: border-box;
+  }
+  
+  :root {
     --cor-primaria: #1b357e;
     --cor-secundaria: #1351d8;
-}
-
-header {
-    padding: 10px;
+  }
+  
+  body {
+    width: 100%;
+  }
+  
+  header {
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2; 
-}
+    background-color: #f2f2f2;
+    position: relative;
+    flex-wrap: wrap;
+  }
   
-.menu ul{
+  #logo {
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+  
+  .menu ul {
     display: flex;
     justify-content: center;
     gap: 40px;
     list-style: none;
-}
-
-li a{
+    flex-wrap: wrap;
+  }
+  
+  li a {
     text-decoration: none;
     color: var(--cor-primaria);
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.7s;
-}
-
-a:hover{
+  }
+  
+  a:hover {
     color: var(--cor-secundaria);
     text-decoration: underline;
-}
-
-#logo{
-    height: 50px;
-    position: absolute;
-    inset: 0;
-}
-
-#imagem-1{
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #imagem-1 {
     width: 100%;
-}
-
-#descricao{
+    height: auto;
+  }
+  
+  #descricao {
     text-align: center;
     font-size: 1.1rem;
     padding: 15px;
-}
-
-button{
-    background: va;
-}
-
-footer{
+  }
+  
+  footer {
     display: flex;
     justify-content: space-between;
-    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
-}
-
-.ajuste-redes{
+    background: var(--cor-primaria);
+    align-items: center;
+  }
+  
+  .ajuste-redes {
     display: flex;
     align-items: center;
-}
-
-strong{
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  strong {
     color: #f2f2f2;
-}
-
-footer{
-    background: var(--cor-primaria);
-}
-
-
-
+  }
+  
+  .logo-ford {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+    }
+  
+    #logo {
+      position: static;
+      margin-bottom: 10px;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    li a {
+      font-size: 18px;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .ajuste-redes {
+      justify-content: center;
+    }
+    
+    #descricao {
+        font-size: 1rem;
+    }
+    
+    strong {
+        font-size: 16px;
+    }
+    
+    footer .ajuste-redes img {
+        width: 24px;
+    }
+  }
+  

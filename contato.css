@@ -1,6 +1,4 @@
-html{
-    height: 100%;
-}
+
 
 *{
     font-family: sans-serif;
@@ -46,9 +44,22 @@ a:hover{
     inset: 0;
 }
 
-h2{
+.title{
     text-align: center;
-    padding: 20px;
+    margin-left: 350px;
+}
+
+.container-form {
+    display: flex;               
+    gap: 40px;                   
+    justify-content: center;    
+    align-items: flex-start;    
+    padding: 20px;             
+    flex-wrap: wrap;           
+}
+
+.car {
+    max-width: 400px;           
 }
 
 .formulario {
@@ -56,31 +67,33 @@ h2{
     flex-direction: column;
     gap: 16px; 
     max-width: 400px;
-    margin: 0 auto; 
     padding: 20px;
 }
 
-form{
-    padding: 90px;
-}
+form {
+    padding: 90px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* melhor para centralizar o conteúdo */
+  }
+  
 
 input{
     border-radius: 5px;
     padding: 10px 18px;
-    border: 1px solid var(--cor-primaria);
+    border: 1px solid black;
 }
 
 input::placeholder{
-    color: rgb(204, 16, 16);
+    color: #000;
 }
 
 select{
     padding: 10px 18px;
-    color: rgb(204, 16, 16);
+    color: #000;
     border-radius: 5px;
     border: 1px solid var(--cor-primaria);
 }
-
 
 #btt{
    display: flex;
@@ -108,6 +121,7 @@ footer{
     justify-content: space-between;
     display: flex;
     padding: 20px;
+    margin-top: 100px;
 }
 
 .ajuste-redes{
@@ -122,3 +136,86 @@ strong{
 footer{
     background: var(--cor-primaria);
 }
+
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #logo {
+      position: static;
+      margin-bottom: 10px;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      gap: 15px;
+      padding-top: 10px;
+    }
+  
+    li a {
+      font-size: 18px;
+    }
+  
+    .title {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  
+    .container-form {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+    }
+  
+    .car {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    .formulario {
+      width: 90%;
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    input, select {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    #btt {
+      padding: 20px 0;
+    }
+  
+    button {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .ajuste-redes {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    strong {
+      font-size: 16px;
+    }
+  
+    .logo-ford {
+      width: 80px;
+      height: auto;
+    }
+  }
+  
