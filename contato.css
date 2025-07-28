@@ -1,87 +1,91 @@
 
 
 *{
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --cor-primaria: #1b357e;
-    --cor-secundaria: #1351d8;
+  --cor-primaria: #1b357e;
+  --cor-secundaria: #1351d8;
 }
 
 header {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2; 
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
   
 .menu ul{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
 }
 
 li a{
-    text-decoration: none;
-    color: var(--cor-primaria);
-    font-size: 25px;
-    transition: 0.7s;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-size: 25px;
+  transition: 0.7s;
 }
 
 a:hover{
-    color: var(--cor-secundaria);
-    text-decoration: underline;
+  color: var(--cor-primaria);
 }
 
 #logo{
-    height: 50px;
-    position: absolute;
-    inset: 0;
+  height: 50px;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+header #logo{
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .title{
-    text-align: center;
-    margin-left: 350px;
+  text-align: center;
+  margin-left: 350px;
 }
 
 .container-form {
-    display: flex;               
-    gap: 40px;                   
-    justify-content: center;    
-    align-items: flex-start;    
-    padding: 20px;             
-    flex-wrap: wrap;           
+  display: flex;               
+  gap: 40px;                   
+  justify-content: center;    
+  align-items: flex-start;    
+  padding: 20px;             
+  flex-wrap: wrap;           
 }
 
 .car {
-    max-width: 400px;           
+  max-width: 400px;           
 }
 
 .formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 16px; 
-    max-width: 400px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  max-width: 400px;
+  padding: 20px;
 }
 
 form {
     padding: 90px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* melhor para centralizar o conteúdo */
+    align-items: center; 
   }
   
 
 input{
-    border-radius: 5px;
-    padding: 10px 18px;
-    border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 18px;
+  border: 1px solid black;
 }
 
 input::placeholder{
@@ -89,26 +93,26 @@ input::placeholder{
 }
 
 select{
-    padding: 10px 18px;
-    color: #000;
-    border-radius: 5px;
-    border: 1px solid var(--cor-primaria);
+  padding: 10px 18px;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid var(--cor-primaria);
 }
 
 #btt{
-   display: flex;
-   justify-content: center;
-   padding: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
 button{
-    background: var(--cor-secundaria);
-    border: none;
-    border-radius: 10px;
-    padding: 15px 45px;
-    font-size: 20px;
-    color: #fffffff0;
-    cursor: pointer;
+  background: var(--cor-secundaria);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 45px;
+  font-size: 20px;
+  color: #fffffff0;
+  cursor: pointer;
 }
 
 button:hover{
@@ -117,24 +121,54 @@ button:hover{
 }
   
 footer{
-    display: flex;
-    justify-content: space-between;
-    display: flex;
-    padding: 20px;
-    margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  padding: 20px;
+  margin-top: 100px;
 }
 
 .ajuste-redes{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 strong{
-    color: #f2f2f2;
+  color: #f2f2f2;
 }
 
 footer{
-    background: var(--cor-primaria);
+  background: var(--cor-primaria);
+}
+
+.facebook{
+  height: 40px;
+  cursor: pointer;
+}
+
+.instagram{
+  height: 40px;
+  cursor: pointer;
+}
+
+.youtube{
+  height: 40px;
+  cursor: pointer;
+}
+
+.facebook:hover{
+  height: 50px;
+  transition: 1s;
+}
+
+.instagram:hover{
+  height: 50px;
+  transition: 1s;
+}
+
+.youtube:hover{
+  height: 50px;
+  transition: 1s;
 }
 
 @media (max-width: 768px) {
