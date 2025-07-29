@@ -15,7 +15,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-     
 }
   
 .menu ul{
@@ -165,35 +164,11 @@ strong{
   color: #fff;
 }
 
-.facebook{
-  height: 40px;
+.facebook, .instagram, .youtube{
   cursor: pointer;
+  height:40px;
 }
-
-.instagram{
-  height: 40px;
-  cursor: pointer;
-}
-
-.youtube{
-  height: 40px;
-  cursor: pointer;
-}
-
-.facebook:hover{
-  height: 50px;
-  transition: 1s;
-}
-
-.instagram:hover{
-  height: 50px;
-  transition: 1s;
-}
-
-.youtube:hover{
-  height: 50px;
-  transition: 1s;
-}
+  
 
 @media (max-width: 768px) {
   header {

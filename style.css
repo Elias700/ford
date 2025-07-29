@@ -1,8 +1,8 @@
 * {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
   
 :root {
@@ -57,36 +57,6 @@ header #logo{
   font-size: 1.1rem;
   padding: 15px;
 }
-  
-.facebook{
-  height: 40px;
-  cursor: pointer;
-}
-
-.instagram{
-  height: 40px;
-  cursor: pointer;
-}
-
-.youtube{
-  height: 40px;
-  cursor: pointer;
-}
-  
-.facebook:hover{
-  height: 50px;
-  transition: 1s;
-}
-
-.instagram:hover{
-  height: 50px;
-  transition: 1s;
-}
-
-.youtube:hover{
-  height: 50px;
-  transition: 1s;
-}
 
 footer {
   display: flex;
@@ -100,8 +70,8 @@ footer {
 .ajuste-redes {
   display: flex;
   align-items: center;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 10px;
 }
   
 strong {
@@ -111,6 +81,11 @@ strong {
 .logo-ford {
   max-width: 100px;
   height: auto;
+}
+
+.facebook, .instagram, .youtube{
+  cursor: pointer;
+  height:40px;
 }
   
 @media (max-width: 768px) {
