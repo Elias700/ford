@@ -63,7 +63,8 @@ header #logo{
 }
 
 .car {
-  max-width: 400px;           
+   height: 250px;
+   cursor: pointer;
 }
 
 .formulario {
@@ -78,6 +79,7 @@ form {
     padding: 90px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center; 
   }
   
@@ -86,6 +88,7 @@ input{
   border-radius: 5px;
   padding: 10px 18px;
   border: 1px solid black;
+  width: 300px;
 }
 
 input::placeholder{
@@ -96,7 +99,7 @@ select{
   padding: 10px 18px;
   color: #000;
   border-radius: 5px;
-  border: 1px solid var(--cor-primaria);
+  border: 1px solid #000;
 }
 
 #btt{
@@ -109,7 +112,7 @@ button{
   background: var(--cor-secundaria);
   border: none;
   border-radius: 10px;
-  padding: 15px 45px;
+  padding: 15px 80px;
   font-size: 20px;
   color: #fffffff0;
   cursor: pointer;
@@ -128,17 +131,24 @@ footer{
   margin-top: 100px;
 }
 
-.ajuste-redes{
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: var(--cor-primaria);
+  align-items: center;
+}
+  
+.ajuste-redes {
   display: flex;
   align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 strong{
-  color: #f2f2f2;
-}
-
-footer{
-  background: var(--cor-primaria);
+  color: #fff;
 }
 
 .facebook{

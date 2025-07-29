@@ -1,46 +1,46 @@
 
 *{
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --cor-primaria: #1b357e;
-    --cor-secundaria: #1351d8;
+  --cor-primaria: #1b357e;
+  --cor-secundaria: #1351d8;
 }
 
 header {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
      
 }
   
 .menu ul{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
 }
 
 li a{
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-size: 25px;
-    transition: 0.7s;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-size: 25px;
+  transition: 0.7s;
 }
 
 a:hover{
-    color: var(--cor-primaria);
+  color: var(--cor-primaria);
 }
 
 #logo{
-    height: 50px;
-    position: absolute;
-    inset: 0;
-    cursor: pointer;
+  height: 50px;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
 }
 
 header #logo{
@@ -49,107 +49,120 @@ header #logo{
 }
 
 .video {
-    width: 100%;
-    height: 500px;
-    max-width: 100%;
-    border: none;
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  border: none;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    gap: 30px; 
-    padding: 40px 20px;
-    flex-wrap: wrap; 
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  padding: 40px 20px;
+  flex-wrap: wrap; 
 }
 
 .ajuste{
-    display: flex;
+  display: flex;
 }
   
 .card-1 {
-    border: 2px solid var(--cor-primaria);
-    border-radius: 10px;
-    padding: 20px;
-    width: 280px;
-    text-align: center;
-    position: relative;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 2px solid var(--cor-primaria);
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 1s;
+}
+
+.card-1:hover{
+  transform: scale(1.02);
 }
   
 .card-1 img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
   
 .card-1 h3 {
-    font-size: 18px;
-    color: var(--cor-secundaria);
-    margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--cor-secundaria);
+  margin-bottom: 10px;
 }
   
 .card-1 p {
-    font-size: 14px;
-    margin: 10px 0;
-    color: #333;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #333;
 }
   
 .card-1 input[type="checkbox"] {
-    width: 40px;
-    height: 20px;
-    margin: 10px auto;
-    cursor: pointer;
+  width: 40px;
+  height: 20px;
+  margin: 10px auto;
+  cursor: pointer;
 }
   
 .card-1 .info {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
 }
   
 #btt{
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 button{
-    background: var(--cor-secundaria);
-    border: none;
-    border-radius: 10px;
-    padding: 15px 45px;
-    font-size: 20px;
-    color: #fffffff0;
-    cursor: pointer;
+  background: var(--cor-secundaria);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 45px;
+  font-size: 20px;
+  color: #fffffff0;
+  cursor: pointer;
 }
 
 button:hover{
-    background: var(--cor-primaria);
-    transition: 0.5s;
+  background: var(--cor-primaria);
+  transition: 0.5s;
 }
 
 footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.ajuste-redes{
-    display: flex;
-    align-items: center;
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: var(--cor-primaria);
+  align-items: center;
+}
+  
+.ajuste-redes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 strong{
-    color: #f2f2f2;
-}
-
-footer{
-    background: var(--cor-primaria);
+  color: #fff;
 }
 
 .facebook{
@@ -183,88 +196,86 @@ footer{
 }
 
 @media (max-width: 768px) {
-    .video {
-      height: 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    #logo {
-      position: static;
-      margin-bottom: 10px;
-    }
-  
-    .menu ul {
-      flex-direction: column;
-      gap: 15px;
-      padding-top: 10px;
-    }
-  
-    li a {
-      font-size: 18px;
-    }
-  
-    section {
-      flex-direction: column;
-      align-items: center;
-      padding: 20px 10px;
-      gap: 20px;
-    }
-  
-    .card-1 {
-      width: 90%;
-      max-width: 320px;
-      padding: 15px;
-    }
-  
-    .card-1 h3 {
-      font-size: 1.1rem;
-    }
-  
-    .card-1 p {
-      font-size: 0.95rem;
-    }
-  
-    .card-1 input[type="checkbox"] {
-      width: 30px;
-      height: 18px;
-    }
-  
-    #btt {
-      padding: 30px 10px;
-    }
-  
-    button {
-      width: 100%;
-      max-width: 320px;
-      font-size: 18px;
-    }
-  
-    footer {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      text-align: center;
-    }
-  
-    .ajuste-redes {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    strong {
-      font-size: 16px;
-    }
-  
-    .logo-ford {
-      width: 80px;
-      height: auto;
-    }
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+  
+  #logo {
+    position: static;
+    margin-bottom: 10px;
+  }
+  
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+  }
+  
+  li a {
+    font-size: 18px;
+  }
+  
+  section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  
+  .card-1 {
+    width: 90%;
+    max-width: 320px;
+    padding: 15px;
+  }
+  
+  .card-1 h3 {
+    font-size: 1.1rem;
+  }
+  
+  .card-1 p {
+    font-size: 0.95rem;
+  }
+  
+  .card-1 input[type="checkbox"] {
+    width: 30px;
+    height: 18px;
+  }
+  
+  #btt {
+    padding: 30px 10px;
+  }
+  
+  button {
+    width: 100%;
+    max-width: 320px;
+    font-size: 18px;
+  }
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .ajuste-redes {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  strong {
+    font-size: 16px;
+  }
+  
+  .logo-ford {
+    width: 80px;
+    height: auto;
+  }
+
+  .video {
+    height: 250px;
+  }
+}
   
