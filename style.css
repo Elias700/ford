@@ -46,10 +46,12 @@ header #logo{
   margin-top: 10px;
   margin-left: 15px;
 }
-  
+
 #imagem-1 {
-  width: 100%;
+  width: 86%;
   height: auto;
+  display: block;
+  margin: 20px auto;
 }
   
 #descricao {
