@@ -1,4 +1,7 @@
 
+html{
+  height: 100vh;
+}
 
 *{
   font-family: sans-serif;
@@ -59,7 +62,7 @@ header #logo{
   justify-content: center;    
   align-items: flex-start;    
   padding: 20px;             
-  flex-wrap: wrap;           
+  flex-wrap: wrap;         
 }
 
 .car {
@@ -91,7 +94,7 @@ input{
 }
 
 input::placeholder{
-    color: #000;
+  color: #000;
 }
 
 select{
@@ -122,14 +125,6 @@ button:hover{
   transition: 0.5s;
 }
   
-footer{
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-  padding: 20px;
-  margin-top: 100px;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -137,17 +132,23 @@ footer {
   padding: 20px;
   background: var(--cor-primaria);
   align-items: center;
+  margin-top: 80px;
 }
   
 .ajuste-redes {
   display: flex;
   align-items: center;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 10px;
 }
-
-strong{
-  color: #fff;
+  
+strong {
+  color: #f2f2f2;
+}
+  
+.logo-ford {
+  max-width: 100px;
+  height: auto;
 }
 
 .facebook, .instagram, .youtube{
@@ -155,7 +156,6 @@ strong{
   height:40px;
 }
   
-
 @media (max-width: 767px) {
     header {
       flex-direction: column;

@@ -138,12 +138,6 @@ button:hover{
   transition: 0.5s;
 }
 
-footer{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -169,7 +163,6 @@ strong{
   height:40px;
 }
   
-
 @media (max-width: 768px) {
   header {
     flex-direction: column;
